@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>慢慢买主页</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<!-- 头部开始 -->
+	<header>
+		<a class="header_logo" href="javascript:;">慢慢买</a>
+		<a class="app_download" href="javascript:;"></a>
+	</header>
+
+	<!-- 搜索部分 -->
+	<div class="search_box">
+		<input class="search " type="text" placeholder="请输入你想比价的商品">
+		<input class="btn" type="button" value="搜索">
+	</div>
+
+	<!-- 导航部分 -->
+	<nav class="nav">
+		<ul class="clearfix nav1">
+			<!-- <li class="w25 fl">
+				<a class="db ac" href="javascript:;">
+					<img src="images/ic_search.png" alt="">
+					<p>比价搜索</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_cu.png" alt="">
+					<p>省钱控</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_coudanpin.png" alt="">
+					<p>国内折扣</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_bcj.png" alt="">
+					<p>白菜价</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/haitao.png" alt="">
+					<p>海淘折扣</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_temai.png" alt="">
+					<p>优惠券</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_trend.png" alt="">
+					<p>查历史价</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/gengduo.png" alt="">
+					<p>更多</p>
+				</a>
+			</li> -->
+		</ul>
+		<ul class="clearfix moreItems dn nav2">
+			<!-- <li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_coudanpin.png" alt="">
+					<p>凑单品</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_kb.png" alt="">
+					<p>口碑排行</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_mall.png" alt="">
+					<p>商城导航</p>
+				</a>
+			</li>
+			<li class="w25 fl"><a class="db ac" href="javascript:;">
+					<img src="images/ic_pp.png" alt="">
+					<p>品牌大全</p>
+				</a>
+			</li> -->
+		</ul>
+	</nav>
+
+	<!-- 超值折扣 -->
+	<section class="discount">
+		<div class="discount_header">
+			<span class="recommend fl">超值折扣推荐</span>
+			<a class="more fr" href="javascript:;">
+				<img src="images/more.png" alt="">
+			</a>
+		</div>
+		<div class="discount_lists">
+			<ul>
+				<!-- <li class="product_item">
+					<a href="javascript:;">
+						<div class="fl product_img">
+							<img src="images/item1_pic.jpg" alt="">
+						</div>
+						<div class="details">
+							<div class="detail_title">
+								Horse oil 熊野油脂 无硅油马油洗发水 600ml <span>29.9元+税4.2税元</span>
+							</div>
+							<div class="detail_info">
+								<span class="mall fl">京东全球购 | 11-25 19:55</span>
+								<span class="comment fr">2</span>
+							</div>
+						</div>
+					</a>
+				</li> -->
+			</ul>
+		</div>
+		<div class="moreItem">
+			<a class="db" href="../moneyctrl/moneyctrl.html">更多优惠信息 »</a>
+		</div>
+	</section>
+
+	<!-- 品牌排行 -->
+	<section class="pinpai">
+		<div class="pinpai_header">
+			<span class="recommend fl">品牌排行</span>
+			<a class="more fr" href="javascript:;">
+				<img src="images/more.png" alt="">
+			</a>
+		</div>
+	</section>
+
+	<!-- 底部部分 -->
+	<footer>
+		<div class="footer_t">
+			<a href="javascript:;" class="login">登录</a>
+			<a href="javascript:;" class="register">注册</a>
+			<a href="#" class="return_top">
+				<img src="images/top.jpg" alt="">
+				返回顶部
+			</a>
+		</div>
+		<div class="footer_b">
+			<p>
+				<a class="app_download" href="javascript:;">手机APP下载</a>
+				<a class="mmb_mobile" href="javascript:;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>
+                m.manmanbuy.com  
+			</p>
+		</div>
+	</footer>
+</body>
+<!-- 模板 -->
+<script type="text/template" id="nav">
+	<% for(var i = 0;i<result.length;i++){ %>
+	<li class="w25 fl">
+		<a class="db ac" href="../<%= result[i].titlehref.split('.')[0] %>/<%= result[i].titlehref %>">
+			<%=# result[i].img %>
+			<p><%= result[i].name %></p>
+		</a>
+	</li>
+	<% } %>
+</script>
+<script type="text/template" id="product">
+	<% for(var i = 0;i<result.length;i++){ %>
+		<li class="product_item">
+			<a href="../inlanddiscount/getmoneyctrl.html?id=<%= result[i].productId  %>">
+				<div class="fl product_img">
+					<%=# result[i].productImg2 %>
+				</div>
+				<div class="details">
+					<div class="detail_title">
+						<%= result[i].productName %> <span><%= result[i].productPinkage %></span>
+					</div>
+					<div class="detail_info">
+						<span class="mall fl"><%= result[i].productFrom %> | <%= result[i].productTime %></span>
+						<span class="comment fr"><%= result[i].productComCount.replace(/\D+/g,'') %></span>
+					</div>
+				</div>
+			</a>
+		</li>
+	<% } %>
+</script>
+<!-- 模板结束 -->
+<script src="js/template-native.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/event.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/home.js"></script>
+</html>

@@ -1,0 +1,124 @@
+html,body{
+    background-color: #ffffff;
+}
+/*商品的展覽開始*/
+.exhibition{
+    height: 230px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ffffff;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.exhibition p{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.exhibition img{
+    width: 170px;
+    margin: 0 auto;
+}
+
+.exhibition .exeTitile{
+    line-clamp: 2;
+     -webkit-line-clamp: 2;
+}
+/*比价购买*/
+.contrast{
+    height: 35px;
+    background-color: #ffc119;
+    margin-top: 10px;
+
+}
+.contrast .contrast_ul{
+    height: 100%;
+    border-bottom: 1px solid #555;
+    border-top: 1px solid #555;
+}
+.contrast .contrast_ul li{
+    width: 33%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+}
+.contrast .contrast_ul .contrast_ul_li1{
+    background-color: #ff960e;
+}
+.contrast .contrast_ul .contrast_ul_li2{
+    border-right: 1px solid #555555;
+    border-left: 1px solid #555555;
+}
+/*比价中的内容开始*/
+.contrast_content{
+    height: 35px;
+    width: 100%;
+    padding-top: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.contrast_content table{
+    width: 100%;
+}
+.contrast_content .red,
+.contrast_content tr td span{
+    float: right;
+    margin-right: 10px;
+}
+.contrast_content .p_pic,
+.contrast_content tr td:nth-child(2){
+    float: left;
+    margin-left: 10px;
+}
+.contrast_content tbody tr td span{
+    display:inline-block;
+    width:56px;
+    height:24px;
+    border-radius:6px;
+    text-align:center;
+    line-height:24px;
+    background-color:#ff5500;
+    color:#fff;
+    font-size:14px;
+}
+/*价格的提示*/
+.prompt{
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #cccccc;
+    padding: 0 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+/*网友评价开始*/
+.comment .comment_title{
+    height: 35px;
+    background-color: #dbdbdb;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.comment_content .comment_content_ul{
+    background-color: #ffffff;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.comment_content .comment_content_ul li{
+    padding-top: 20px;
+}
+.comment_content .comment_content_ul li .text{
+    line-height: 22px;
+    font-size: 14px;
+    color: black;
+}
+.comment_content .comment_content_ul li .use,
+.comment_content .comment_content_ul li .date,
+.comment_content .comment_content_ul li .source{
+    font-size: 14px;
+    line-height: 25px;
+}

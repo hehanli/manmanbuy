@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/hanhan-common.css">
+        <link rel="stylesheet" href="css/hanhan.css">
+        <script src="js/jquery-2.2.4.js"></script>
+        <script src="js/template-native.js"></script>
+        <script src="js/hanhan.js"></script>
+    </head>
+    <body>
+    <!-- header部分 -->
+    <header class="mmm_header">
+        <a href="../Home/home.html" class="fl mmm_header_return"></a>
+
+        <a href="javascript:;" class="fr mmm_header_app"></a>
+
+        <div class="mmm_header_title ta">凑单品</div>
+    </header>
+        
+
+    <!--导航栏部分，左右布局-->
+    <nav class="cdp_nav">
+        <div class="nav_bar">
+            <div class="nav_right fr"></div>
+            <div class="nav_left">
+                <ul class="nav_item">
+                    <li class="w33 fl" data-target="shop">京东</li>
+                    <li class="w33 fl" data-target="shoparea">华北</li>
+                    <li class="w33 fl" data-target="price">全部价格</li>
+                </ul>
+            </div>
+            <!--各种下拉列表-->
+           <div class="nav_lists">
+               <!--店铺列表-->
+               <div id="shop" class="shop">
+                   <ul>
+                       <li><a href="">京</a></li>
+                       <li><a href="">一</a></li>
+                       <li><a href="">天</a></li>
+                   </ul>
+               </div>
+               <!--shoparea列表-->
+               <div id="shoparea" class="shoparea">
+                   <ul>
+                       <li><a href="">华北(北京，山西等)</a></li>
+                       <li><a href="">华北(北京，山西等)</a></li>
+                       <li><a href="">华北(北京，山西等)</a></li>
+                   </ul>
+
+               </div>
+               <!--全部价格列表-->
+               <div id="price" class="price">
+                   <ul>
+                       <li><a href="">全部价格</a></li>
+                       <li><a href="">1-3元</a></li>
+                       <li><a href="">3-5元</a></li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+    </nav>
+
+    <!--主体详细商品部分开始-->
+    <section class=cdp_product>
+        <div class="product_common clearfix">
+
+            <!--<div class="product_right w50 fl">-->
+                <!--<div class="product_img">-->
+                    <!--<img src="images/hanhan_img/5_03.gif" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="product_txt">-->
+                    <!--<p>单人专用餐具</p>-->
+                <!--</div>-->
+                <!--<div class="cdp_pay">-->
+                    <!--<span class="fl cdp_money">¥0.05</span>-->
+                    <!--<span class="fr cdp_free">去凑单</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </section>
+
+    <script type="text/html" id="tpl">
+        <% for(var i=0;i< result.length;i++){%>
+        <div class="product_item w50 fl">
+            <div class="product_img">
+               <img src="<%= result[i].productImg %>" alt=""/>
+            </div>
+            <div class="product_txt">
+                <p class="one_txt_cut"><%= result[i].productName %></p>
+           </div>
+            <div class="cdp_pay">
+                <span class="fl cdp_money"><%= result[i].productPrice %></span>
+                <span class="fr cdp_free">去凑单</span>
+            </div>
+        </div>
+        <% } %>
+    </script>
+
+    <script type="text/html" id="store">
+        <% for(var i=0;i< result.length;i++){%>
+            <li><a href="javascript:;" data-shopid="<%= result[i].shopId %>"><%= result[i].shopName %></a></li>
+        <% } %>
+    </script>
+
+    <script type="text/html" id="area">
+        <% for(var i=0;i< res.length;i++){%>
+        <li><a href="javascript:;" data-areaid="<%= res[i].areaId %>"><%= res[i].areaName %></a></li>
+        <% } %>
+    </script>
+
+
+    </body>
+</html>

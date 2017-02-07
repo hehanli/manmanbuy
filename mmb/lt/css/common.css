@@ -1,0 +1,127 @@
+/*
+* @Author: lenovo
+* @Date:   2016-12-01 10:20:25
+* @Last Modified by:   lenovo
+* @Last Modified time: 2016-12-01 10:30:16
+*/
+/* 网页的头部开始 */
+.header_warp{
+	height: 50px;
+	background-color: #ff841d;
+}
+.header_warp .header_loge{
+	margin-top: 12px;
+	margin-left: 18px;
+}
+.header_warp .header_loge img{
+	height: 25px;
+	width: 185px;
+}
+.header_warp .header_download{
+	margin-top: 8px;
+	margin-right: 7px;
+}
+.header_warp .header_download img{
+	height: 35px;
+	width: 35px;
+}
+/*公共的搜索区域*/
+.search_header{
+	height: 52px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #ccc;
+	padding: 8px 10px;
+	box-sizing: border-box;
+}
+.search_header .search_frame{
+	height: 100%;
+	width: 100%;
+	background-color: #f1f1f1;
+	border-radius: 18px;
+	position: relative;
+}
+.search_header .search_frame .search_txt{
+	background-color: #f1f1f1;
+	height: 100%;
+	width: 100%;
+	border-radius: 18px;
+	text-indent: 18px;
+	outline: none;
+}
+.search_header .search_frame .yuan_search_btn{
+	height: 100%;
+	width: 60px;
+	background-color: #ff841d;
+	position: relative;
+	margin-right: 5px;
+	border-radius: 18px;
+}
+.search_header .yuan_search_btn .search_btn{
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 5px;
+}
+/*三级导航开始*/
+.three_nav{
+	height: 38px;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #ccc;
+	line-height: 38px;
+	padding-left: 10px;
+}
+.three_nav a{
+	color: black;
+}
+
+/*页面的页脚开始*/
+/*底部部分*/
+footer{
+	margin-top: 10px;
+	background-color: #efefef;
+}
+footer .footer_t{
+	font-size: 0;
+}
+footer .footer_t a{
+	display: inline-block;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	line-height: 34px;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+}
+footer .footer_t .login{
+	width: 30%;
+}
+footer .footer_t .register{
+	width: 30%;
+	box-sizing: border-box;
+	border: 1px solid #c4c4c4;
+}
+footer .footer_t .return_top{
+	width: 40%;
+}
+footer .footer_t .return_top img{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-bottom: -1px;
+	margin-right: -3px;
+}
+
+footer .footer_b{
+	padding: 15px 0;
+	text-align: center;
+}
+footer .footer_b p{
+	height: 14px;
+	line-height: 14px;
+}
+footer .footer_b .app_downlod{
+	color:#fd0000;
+}
+footer .footer_b .mmb_mobile{
+	color:#000000;
+}

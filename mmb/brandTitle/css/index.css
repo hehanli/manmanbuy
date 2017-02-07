@@ -1,0 +1,50 @@
+/*nav区域*/
+.mmb_nav{
+    height: 38px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    line-height: 38px;
+    font-family: Arial;
+    padding-left: 10px;
+}
+
+.mmb_nav a{
+    color: #000;
+}
+/*品牌区域*/
+.mmb_products_h{
+    height: 40px;
+    margin: 10px 5px 10px 5px;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 18px;
+}
+.mmb_products_h a{
+    color: #874604;
+}
+.mmb_products_b ul li{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 5px 10px 5px;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+}
+.mmb_products_b ul li:before{
+    content: '';
+    width: 30px;
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: url('../images/icons/arrow1-1.gif') no-repeat;
+}
+.mmb_products_b ul li h3{
+    font-size: 18px;
+    color: #000;
+}
+.mmb_products_b_list{
+    margin-bottom: 25px;
+}

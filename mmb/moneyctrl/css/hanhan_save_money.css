@@ -1,0 +1,129 @@
+/*省钱控*/
+
+/*商品展示部分*/
+.product_list{
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    background-color: #fff;
+    /*border-bottom: 1px solid #cccccc;*/
+}
+.product_list .product_item{
+    border-bottom: 1px solid #e0e0e0;
+    padding: 14px 8px;
+    min-height: 100px;
+}
+.product_list .product_img{
+    width: 100px;
+    height: 100px;
+}
+.product_list .product_item .details{
+    margin-left: 110px;
+    min-height: 100px;
+}
+.product_list .details .detail_title{
+    font-size: 15px;
+    color:#333333;
+    min-height: 57px;
+}
+.product_list .details .detail_title span{
+    color:#ff6c00;
+}
+
+.product_list .details .detail_info{
+    margin-top: 12px;
+    color: #a1a1a1;
+}
+.product_list .details .detail_info .comment{
+    position: relative;
+}
+.product_list .details .detail_info .comment::before{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 11px;
+    background-image: url(../images/comment.png);
+    left: -18px;
+    top: 4px;
+}
+
+/*结尾部分*/
+.save_floor{
+    background-color: #fff;
+}
+.save_floor .floor_nav{
+    height: 77px;
+    line-height: 77px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+    padding:0 14px;
+
+}
+.save_floor .floor_nav div{
+    text-align: center;
+}
+.save_floor .floor_nav input{
+    width: 78px;
+    height: 34px;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.save_floor .floor_nav input[type='text']{
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.floor_shouye{
+    height: 36px;
+    line-height: 36px;
+    text-indent: 15px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #f6f6f6;
+    font-size: 16px;
+}
+
+
+/*底部结束部分*/
+.save_money_over{
+    background-color: #efefef;
+}
+.save_denglv{
+    margin-top: 26px;
+    height: 33px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background-color: #efefef;
+}
+.save_denglv ul li{
+    text-align: center;
+    line-height: 33px;
+    border-right: 1px solid #dbdbdb;
+    box-sizing: border-box;
+
+}
+.save_denglv ul #back_top{
+    border-right: none;
+
+
+}
+.save_denglv ul li a{
+    height: 33px;
+    line-height: 33px;
+    font-size: 18px;
+}
+
+.save_money_bottom{
+    height: 80px;
+  text-align: center;
+}
+
+.save_money_bottom div{
+    margin-top: 15px;
+}
+.save_money_bottom div .app_red{
+    color: red;
+}

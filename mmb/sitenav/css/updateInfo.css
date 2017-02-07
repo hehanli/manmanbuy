@@ -1,0 +1,89 @@
+/*最新评论头部*/
+.mmb_update_info_top{
+    height: 36px;
+    border-bottom: 1px solid #C4C4C4;
+    line-height: 36px;
+    text-indent: 10px;
+    font-size: 16px;
+    color: #A24604;
+    background-color: #F3F3F3;
+}
+/*最新评论主体*/
+.mmb_update_main{
+    height: 120px;
+    background-color: #fff;
+}
+.mmb_update_main .left{
+    width: 120px;
+    height: 120px;
+    /*background-color: red;*/
+}
+.mmb_update_main .left img{
+    margin-left: 10px;
+    width: 120px;
+}
+.mmb_update_main .right{
+    margin-left: 120px;
+    height: 120px;
+    /*background-color: pink;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.mmb_update_main .right p{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #999999;
+     -webkit-line-clamp: 3;
+}
+.mmb_update_txt{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.mmb_update_txt_wrap{
+    width: 100%;
+    /*height: 500px;*/
+    padding: 10px ;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    background-color: #F8F8F8;
+    position: relative;
+    /*z-index: 5;*/
+}
+.mmb_update_txt_wrap:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-top: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+    position: absolute;
+    top: -7px;
+    left: 50px;
+    background-color: #F8F8F8;
+}
+.mmb_update_txt_wrap .txt_date{
+    height: 38px;
+
+}
+.mmb_update_txt_wrap .txt_date .left{
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 10px;
+    color: #4F6900;
+}
+.mmb_update_txt_wrap .txt_date .right{
+    margin-left: 150px;
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+    margin-right: 20px;
+    color: #B09999;
+}
+.txt_content{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}

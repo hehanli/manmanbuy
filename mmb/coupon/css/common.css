@@ -1,0 +1,106 @@
+/*header部分*/
+header{
+	background-color:#f4483e;
+	position: relative;
+}
+
+header .header_icon{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 44px;
+	width:44px;
+}
+
+header .header_icon img{
+	width: 10px;
+	height: 16px;
+	position: absolute;
+	left: 19px;
+	top: 14px;
+}
+
+header .app_download{
+	position: absolute;
+	top: 6px;
+	right: 9px;
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/header_app.png);
+	background-size: cover;
+}
+
+header p{
+	height: 44px;
+	color: #ffffff;
+	line-height: 44px;
+	font-size: 20px;
+}
+
+
+
+/*title部分*/
+.title{
+	height: 36px;
+	line-height: 36px;
+	background-color: #f4f4f4;
+	padding-left: 8px;
+	font-size: 14px;
+	border-top:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	margin-bottom: 25px;
+}
+.title a{
+	color: #000;
+}
+
+/*底部部分*/
+footer{
+	margin-top: 10px;
+	background-color: #efefef;
+}
+footer .footer_t{
+	font-size: 0;
+}
+footer .footer_t a{
+	display: inline-block;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	line-height: 34px;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+}
+footer .footer_t .login{
+	width: 30%;
+}
+footer .footer_t .register{
+	width: 30%;
+	box-sizing: border-box;
+	border: 1px solid #c4c4c4;
+}
+footer .footer_t .return_top{
+	width: 40%;
+}
+footer .footer_t .return_top img{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-bottom: -1px;
+	margin-right: -3px;
+}
+
+footer .footer_b{
+	padding: 15px 0;
+	text-align: center;
+}
+footer .footer_b p{
+	height: 14px;
+	line-height: 14px;
+}
+footer .footer_b .app_downlod{
+	color:#fd0000;
+}
+footer .footer_b .mmb_mobile{
+	color:#000000;
+}

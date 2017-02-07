@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/getsitenav.css">
+</head>
+<body>
+<!--头部区域-->
+<header class='mmb_top'>
+    <a class="left fl" href="../Home/home.html"></a>
+    <div class="right fr mmb_app">
+        <a href="#" class='my__center'>
+            <img src="images/icons/header_app.png" alt="">
+        </a>
+    </div>
+    <div class="center">
+        <h3>商城导航</h3>
+    </div>
+</header>
+<!--主体区域-->
+<section class='mmb_title'>
+    <ul class='mmb_title_list clearfix'>
+        <!--<li class='fl'>-->
+            <!--<a href="#">-->
+                <!--<img src="images/imgs/1.png.jpg" alt="">-->
+                <!--<span>京东商城</span>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+</section>
+<!--尾部区域-->
+<section class='footer'>
+    <div class="footer_return">
+        <button class="login fl">
+            <a href="#">登录</a>
+        </button>
+        <button class="register fl">
+            <a href="#">注册</a>
+        </button>
+        <button class="back fr ">
+            <a href="#">返回顶部</a>
+        </button>
+    </div>
+    <div class="phoneload">
+        <p><span style='color: #FF0000'>手机APP下载</span>慢慢买手机版--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+<script src='js/zepto.js'></script>
+<script src='js/ajax.js'></script>
+<script src='js/event.js'></script>
+<script src='js/template-native.js'></script>
+<script type='text/html' id=tpl>
+    <%for(var i = 0 ; i < items.length; i ++ ) { %>
+        <li class='fl'>
+            <a href="<%= items[i].navHref %>">
+                <img src="<%= items[i].navImg %>" alt="">
+                <span><%= items[i].navTitle %></span>
+            </a>
+        </li>
+    <% } %>
+</script>
+<script src='js/getsitenav.js'></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+/*nav区域*/
+.mmb_nav{
+    height: 38px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    line-height: 38px;
+    font-family: Arial;
+    padding-left: 10px;
+}
+/*十大品牌区域*/
+.mmb_product_h{
+    height: 35px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #eaeaea;
+    line-height: 35px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 14px;
+    color: #874604;
+}
+.mmb_product_b ul li{
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+    /*margin: 0 auto;*/
+    position: relative;
+}
+.mmb_product_b ul li:before{
+    content: '';
+    width: 7px;
+    height: 15px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    background: url(../images/icons/arrow_r.png) no-repeat ;
+}
+.mmb_product_b ul li a{
+    height: 38px;
+    width: 424px;
+    /*width: 100%;*/
+    padding-left: 10px;
+    display: block;
+    padding-top: 10px;
+}
+.mmb_product_b ul li a .tip{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    line-height: 20px;
+}
+.mmb_product_b ul li:nth-child(1) a .tip{
+    background-color: red;
+}
+.mmb_product_b ul li:nth-child(2) a .tip{
+    background-color: orange;
+}
+.mmb_product_b ul li:nth-child(3) a .tip{
+    background-color: greenyellow;
+}
+.product_info {
+    display: inline-block;
+    font-family: Arial;
+    margin-left: 10px;
+}
+.product_info h3{
+    color: #000;
+    font-size: 16px;
+}
+.product_info p{
+    font-size: 14px;
+}
+
+
+
+
+

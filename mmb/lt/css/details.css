@@ -1,0 +1,83 @@
+html,body{
+    background-color: #ffffff;
+}
+/*网页的主体部分*/
+/*网页的商品的列表页面*/
+.main .wares{
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 30px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.main .wares .wares_img{
+    width: 100px;
+    height: 100%;
+    margin: 0 10px;
+}
+.main .wares .wares_introduce{
+    line-height: 20px;
+    position: relative;
+}
+.main .wares .wares_introduce .wares_title{
+    color: black;
+    font-size: 16px;
+    line-clamp:2;
+     -webkit-line-clamp: 2;
+}
+.main .wares .wares_introduce .wares_price{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .wares .wares_introduce .comment{
+    position: absolute;
+    right: 0;
+    /*bottom: -15px;*/
+}
+.main .wares_warp .wares:last-child{
+    border-bottom: none;
+}
+/*商品的页数*/
+.page_wares{
+    height: 35px;
+    margin-top: 10px;
+    position: relative;
+    padding: 0 10px;
+}
+.page_wares .previous,
+.page_wares .next{
+    text-align: center;
+    line-height: 35px;
+    color: black;
+    font-size: 16px;
+    display: block;
+    width: 82px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #dbdbdb;
+    box-shadow:0 5px 5px 0 #555555;
+    outline: none;
+}
+.page_wares .pulldown{
+    height: 30px;
+    width: 70px;
+    padding-left: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+/*弹出提示框*/
+.popTip{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px;
+    font-size: 18px;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    color: #ddd;
+    display: none;
+}

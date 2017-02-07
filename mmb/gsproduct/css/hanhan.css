@@ -1,0 +1,169 @@
+/* 凑单品 */
+
+/*导航部分*/
+.cdp_nav{
+	background-color: #fff;
+	z-index: 99999;
+}
+.nav_bar{
+	height: 40px;
+	border-bottom: 1px solid #dbdbdb;
+	position: relative;
+}
+.nav_bar .nav_right{
+	width: 46px;
+	height: 40px;
+	background: url("../images/hanhan_img/shousuo.jpg") center  center  no-repeat;
+}
+.nav_bar .nav_left{
+	padding-right: 46px;
+	box-sizing: border-box;
+	height: 40px;
+}
+.nav_bar .nav_left ul{
+	height: 40px;
+	border-right: 1px solid #dbdbdb;
+}
+.nav_bar .nav_left li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+
+/*各种下拉列表开始*/
+.nav_bar .shop{
+	margin-top: 1px;
+	display: none;
+
+}
+.nav_bar .shop ul{
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	background-color:#ffffff;
+
+	/*display: block;*/
+}
+.nav_bar  .shop ul li{
+	height: 40px;
+	line-height: 40px;
+}
+.nav_bar  .shop ul li a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	color: #5a5a5a;
+	font-size: 16px;
+	text-indent: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+/*shoparea列表*/
+.nav_bar .shoparea{
+	display: none;
+	margin-top: 1px;
+}
+.nav_bar .shoparea ul{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+
+}
+.nav_bar  .shoparea ul li{
+	height: 40px;
+	line-height: 40px;
+}
+.nav_bar  .shoparea ul li a{
+	width: 100%;
+	display: block;
+	height: 40px;
+	color: #5a5a5a;
+	font-size: 16px;
+	text-indent: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #dbdbdb;
+
+}
+/*价格列表*/
+.nav_bar .price{
+	display: none;
+	margin-top: 1px;
+}
+.nav_bar .price ul{
+	width: 100%;
+	background-color: #fff;
+	position: absolute;
+
+}
+.nav_bar  .price ul li{
+	height: 40px;
+	line-height: 40px;
+}
+.nav_bar  .price ul li a{
+	display: block;
+	height: 40px;
+	color: #5a5a5a;
+	font-size: 16px;
+	padding-left: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+
+
+/*主体详细商品部分开始*/
+.cdp_product{
+	background-color: #f1f1f1;
+
+
+}
+.product_common{
+	padding:10px 8px;
+	box-sizing: border-box;
+	background-color: #f1f1f1;
+
+}
+.cdp_product .product_item{
+	padding-left: 5px;
+	box-sizing: border-box;
+	/*background-color: #ffffff;*/
+}
+/*.cdp_product .product_right{*/
+	/*padding-left: 5px;*/
+	/*box-sizing: border-box;*/
+	/*/!*background-color: #ffffff;*!/*/
+/*}*/
+.cdp_product .product_img{
+	height: 140px;
+
+}
+.cdp_product .product_img img{
+
+}
+.cdp_product .product_txt p{
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	text-indent: 8px;
+}
+.cdp_product .cdp_pay{
+	width: 100%;
+	padding:5px;
+}
+.cdp_product .cdp_pay .cdp_money{
+	color: #f86220;
+	font-size: 20px;
+	font-weight: 700;
+}
+.cdp_product .cdp_pay .cdp_free{
+	width: 62px;
+	height: 24px;
+	background-color: #ff9501;
+	border-radius: 5px;
+	color: #ffffff;
+	line-height: 24px;
+	text-align: center;
+	margin-right: 20px;
+}

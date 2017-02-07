@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/template-native.js" ></script> 
+        <script type="text/javascript"  src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+                        
+                        <!-- 外部大导航 -->
+        <script id="tpl" type="text/temp">
+            <% for(var i=0;i<tit.length;i++){ %>
+                  <li class="nav_li clearfix" data-titleid=<%= tit[i].titleId %>>
+                    <span class="mmm_nav_l"> <%= tit[i].title %></span>
+                    <span class="mmm_nav_r fr" > » </span>
+                    <ul class="mmm_nav_detail" id="category"></ul>
+                  </li>
+            <% } %>
+        </script>
+
+                        <!-- 小导航 -->
+        <script id="tpl_category" type="text/temp">
+                    <% for(var i=0; i<caty.length;i++){ %>
+                          <li><a href="../lt/details.html?categoryId=<%=caty[i].categoryId %>"> <%=caty[i].category %> </a></li>                        
+                    <% } %>
+        </script>          
+ </head>
+ <body>
+
+    	<div class="box">
+   <!-- 头部区域 -->
+    		<header class="mmm_header">
+    				<div class="header_left_logo fl"></div>
+    				<div class="header_right_download"></div>
+    		</header>
+   <!-- 搜索区域 -->
+	    	<section class="mmm_serch">
+	    	    <div class="mmm_serch_r">
+	    	    	<a href="###">搜索</a>
+	    	    </div>
+	    		 <div class="mmm_serch_l">
+	    		 	<input type="search" placeholder="请输入你想比价的商品">
+	    		 </div>
+        </section>
+
+  <!-- 导航区 -->
+   <nav class="mmm_nav_box clearfix" >	
+          <!-- 模板引擎	 -->
+     <ul class="mmm_nav" id="nav"></ul>
+   </nav>
+
+    <!-- 底部导航开始 -->
+    <footer class="mmm_footer">
+        <ul class="mmm_footer_top">
+            <li><a href="###">登录</a></li>
+            <li><a href="###">注册</a></li>
+            <li><a href="###">▲返回顶部</a></li>
+        </ul>
+
+        <div class="mmm_footer_fot">
+            <span>
+                  <a href="###" class="a">手机APP下载 &nbsp;</a> 
+                  <a href="###" class="b">慢慢买手机版</a>
+                  <a href="###" class="c">— 掌上比价平台</a> 
+            </span>
+            <p>m.manmanbuy.com</p>
+        </div>    
+    </footer>
+</div>
+
+</body>
+</html>

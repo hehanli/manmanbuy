@@ -1,0 +1,112 @@
+/*头部区域*/
+.mmb_top{
+    height: 50px;
+    background-color: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+}
+.mmb_top .mmb_logo{
+    margin-right: 48px;
+    height: 50px;
+    position: relative;
+}
+.mmb_top .mmb_logo a{
+    margin-left: 20px;
+}
+.mmb_top .mmb_logo a img{
+    width: 185px;
+    height: 25px;
+}
+.mmb_top .mmb_app{
+    height: 50px;
+    width: 48px;
+    position: relative;
+}
+.mmb_top .mmb_app a img{
+    width: 34px;
+    height: 34px;
+}
+
+/*search区域*/
+.mmb_search{
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 50px;
+    padding-left: 10px;
+    position: relative;
+}
+.mmb_search .mmb_search_txt .s_input{
+    height: 30px;
+    width: 90%;
+    background-color: #f1f1f1;
+    line-height: 30px;
+    border-radius: 15px;
+    text-indent: 20px;
+    font-size: 16px;
+    font-family: '宋体';
+    outline: none;
+}
+.mmb_search .mmb_search_btn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.mmb_search .mmb_search_btn .s_btn{
+    width: 63px;
+    height: 30px;
+    background-color: #ff841d;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-family: '宋体';
+}
+/*尾部*/
+.footer{
+    height: 97px;
+    background-color: #EFEFEF;
+    margin-bottom: 50px;
+}
+.footer .footer_return{
+    height: 34px;
+    border-bottom:1px solid #C4C4C4;
+}
+.footer .footer_return a{
+    color: #000;
+    font-size: 14px;
+}
+.footer .footer_return .login{
+    width: 30%;
+    height: 34px;
+    border: none;
+    border-right: 1px solid #C4C4C4;
+    background-color: #EFEFEF;
+}
+.footer .footer_return .register{
+    width: 30%;
+    height: 34px;
+    border: none;
+    background-color: #EFEFEF;
+}
+.footer .footer_return .back{
+    width: 40%;
+    height: 34px;
+    border: none;
+    background-color: #EFEFEF;
+    border-left: 1px solid #C4C4C4;
+    text-indent: 20px;
+    position: relative;
+}
+.footer .footer_return .back:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    left: 28px;
+    background: url('../images/icons/top.jpg') no-repeat;
+    background-size: cover;
+}
+.footer .phoneload{
+    text-align: center;
+    padding-top: 15px;
+}

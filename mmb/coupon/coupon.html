@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优惠券</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/quan.css">
+</head>
+<body>
+<!-- header部分 -->
+	<header>
+		<a class="header_icon" href="../Home/home.html">
+			<img src="images/back.png" alt="">
+		</a>
+		<a class="app_download" href="javascript:;"></a>
+		<p class="ac">优惠券</p>
+	</header>
+
+<!-- main部分 -->
+	<div class="main">
+		<ul class="shopNav clearfix ac">
+			<!-- <li class="shopItem w33">
+				<a class="db" href="javascript:;">
+					<img src="images/2013310191729944.jpg" alt="">
+					<p>肯德基</p>
+				</a>
+			</li> -->
+		</ul>
+	</div>
+
+<!-- title部分 -->
+	<div class="title">
+		<a href="../Home/home.html">首页></a>
+		<a href="javascript:;">优惠券</a>
+	</div>
+
+<!-- 底部部分 -->
+	<footer>
+		<div class="footer_t">
+			<a href="javascript:;" class="login">登录</a>
+			<a href="javascript:;" class="register">注册</a>
+			<a href="#" class="return_top">
+				<img src="images/top.jpg" alt="">
+				返回顶部
+			</a>
+		</div>
+		<div class="footer_b">
+			<p>
+				<a class="app_download" href="javascript:;">手机APP下载</a>
+				<a class="mmb_mobile" href="javascript:;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>
+                m.manmanbuy.com  
+			</p>
+		</div>
+	</footer>
+</body>
+<script type="text/template" id="tpl">
+<% for(var i = 0;i<result.length;i++){ %>
+	<li class="shopItem w33">
+		<a class="db" href="couponproduct/<%= result[i].couponLink %>?couponId=<%= result[i].couponId %>&couponTitle=<%= result[i].couponTitle %>">
+			<img src="<%= result[i].couponImg %>" alt="">
+			<p><%= result[i].couponTitle %></p>
+		</a>
+	</li>
+<% } %>
+</script>
+<script src="js/template-native.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/event.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/quan.js"></script>
+</html>

@@ -1,0 +1,50 @@
+/*产品信息部分*/
+.mmb_product_info{
+    height: 35px;
+    border-bottom: 1px solid #C4C4C4;
+    background-color: #F3F3F3;
+    line-height: 35px;
+    text-indent: 10px;
+    color: #A04604;
+    font-size: 16px;
+}
+/*主体区域*/
+.mmb_content ul li{
+    height: 120px;
+    border-bottom: 1px solid #C4C4C4;
+    background-color: #fff;
+}
+.mmb_content ul li a{
+    display: block;
+}
+.mmb_content ul li .left {
+    height: 120px;
+    width: 140px;
+}
+.mmb_content ul li .left img{
+    width: 120px;
+    margin-left: 10px;
+}
+.mmb_content ul li .right{
+    margin-left: 140px;
+    height: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.mmb_content ul li .right p{
+    margin-left: 20px;
+}
+.mmb_content ul li .right .jiage{
+    line-height: 30px;
+}
+.mmb_content ul li .right p:nth-child(1){
+    font-size: 12px;
+    color: #000;
+     -webkit-line-clamp: 3;
+}
+.mmb_content ul li .right p:nth-child(2){
+    color: #EA3900;
+    font-family: bold;
+    font-size: 14px;
+}

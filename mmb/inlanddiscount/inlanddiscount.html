@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>慢慢买</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/dropload.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+
+</head>
+<body>
+    <!--慢慢买头部-->
+    <header class="mmm_header">
+        <a href="../Home/home.html" class="fl mmm_header_return"></a>
+
+        <a href="javascript:;" class="fr mmm_header_app"></a>
+
+        <div class="mmm_header_title ta">国内折扣</div>
+    </header>
+
+    <!--慢慢折扣商品-->
+    <section class="mmm_goods mt_44" id="products">
+        <div class="mmm_goods_lists clearfix">
+            <!-- 下面的是实例，后期删除-->
+            <!--<a href="http://localhost/project-manmamai/code/mydiscount.html?id=<%=goods.productId  %>" class="mmm_goods_wrap w50 fl">-->
+                <!--<div class="goods_wrap_img">-->
+                    <!--<img src="bb.jpg" alt=""/>-->
+                <!--</div>-->
+                <!--<h4 class="txt_cut"></h4>-->
+                <!--<p class="goods_wrap_price"></p>-->
+                <!--<span></span> |-->
+                <!--<span></span>-->
+            <!--</a>-->
+        </div>
+    </section>
+
+    <!-- 慢慢买折扣商品底部-->
+    <footer class="mmm_footer dn ta">
+        <div class="mmm_footer_t clearfix">
+            <a class="w33 fl" href="javascript:;">登录</a>
+            <a class="w33 fl" href="javascript:;">注册</a>
+            <a class="w33 fl" href="#">返回顶部</a>
+        </div>
+        <div class="mmm_footer_b">
+            <p><span class="app">手机APP下载</span>
+                <span class="phone">慢慢买手机版</span>--掌上性价比平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+
+    </footer>
+
+
+<!--模板引擎-->
+<script id="tpl" type="text/html">
+
+        <a href="mydiscount.html?id=<%=goods.productId  %>" class="mmm_goods_wrap w50 fl">
+            <div class="goods_wrap_img"><%=# goods.productImg %></div>
+            <h4 class="txt_cut"><%=goods.productName  %></h4>
+            <p class="goods_wrap_price"><%=goods.productPrice  %></p>
+            <span><%=goods.productFrom  %></span> |
+            <span><%=goods.productTime  %></span>
+        </a>
+
+</script>
+<script src="js/zepto.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/event.js"></script>
+<script src="js/template-native.js"></script>
+<script src="js/dropload.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

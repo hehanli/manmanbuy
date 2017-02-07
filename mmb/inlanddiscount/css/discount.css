@@ -1,0 +1,175 @@
+html,body{
+    background-color: #fff;
+}
+
+/*慢慢买折扣详情页主体内容*/
+.mmm_discount{
+    padding: 0 10px;
+}
+.mmm_discount h2{
+    font-size: 16px;
+    color: #000;
+}
+.mmm_discount .price{
+    color: #ff841d;
+    font-size: 14px;
+}
+.mmm_discount .from{
+    line-height: 50px;
+}
+.mmm_discount .text{
+    font-size: 16px;
+
+}
+.mmm_discount .text span{
+    /*float: left;*/
+}
+.mmm_discount .text img{
+    width: 130px;
+    height: 130px;
+    float: right;
+}
+.mmm_discount .text p{
+    text-indent: 2em;
+}
+
+/*立即购买*/
+.mmm_buy{
+    width: 80%;
+    height: 40px;
+    background-color: #ff841d;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 20px auto;
+}
+
+/*二维码专区*/
+.mmm_erweima_wrap{
+    width: 95%;
+    margin:  25px auto;
+    padding-top: 20px;
+    height: 112px;
+}
+.mmm_erweima{
+    height: 100%;
+    border: 1px solid #ee9785;
+    position: relative;
+}
+.erweima_border span{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+}
+.erweima_border span:nth-child(1){
+    border-top: 2px solid #e04627;
+    border-left: 2px solid #e04627;
+    left: -2px;
+    top: -2px;
+}
+.erweima_border span:nth-child(2){
+    border-top: 2px solid #e04627;
+    border-right: 2px solid #e04627;
+    right: -2px;
+    top: -2px;
+}
+.erweima_border span:nth-child(3){
+    border-bottom: 2px solid #e04627;
+    border-right: 2px solid #e04627;
+    bottom: -2px;
+    right: -2px;
+}
+.erweima_border span:nth-child(4){
+    border-bottom: 2px solid #e04627;
+    border-left: 2px solid #e04627;
+    left: -2px;
+    bottom: -2px;
+}
+
+.erweima_image{
+    width: 78px;
+    height: 80px;
+    margin-top: 13px;
+    margin-right: 17px;
+}
+.erweima_link{
+    margin-right: 100px;
+    padding-top: 15px;
+    padding-left: 5px;
+
+}
+.erweima_friendLink p{
+    color: #e04627;
+}
+.erweima_news{
+    padding: 0 17px;
+}
+.erweima_news a{
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+    display: block;
+    margin-top: 18px;
+    height: 22px;
+    background-color: #e04627;
+    border-radius: 22px;
+}
+    /*商品评论区*/
+.mmm_talk{
+    padding: 0 10px;
+}
+.mmm_talk .tit{
+    font-size: 14px;
+    color: #000;
+}
+.mmm_talk textarea{
+    width: 100%;
+    outline: none;
+}
+.mmm_talk .form{
+    position: relative;
+
+}
+.mmm_talk .form textarea{
+    display: block;
+    height: 70px;
+    border: 1px solid #cccccc;
+}
+.mmm_talk .ctrl{
+    width: 100%;
+    height: 39px;
+    background-color: #efefef;
+    display: block;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.mmm_talk .ctrl input{
+    float: right;
+    width: 100px;
+    height: 39px;
+    background-color: #ff841d;
+    color: #fff;
+    display: block;
+}
+
+.mmm_talk .ui-border-b{
+    padding: 12px 0;
+}
+.mmm_talk .userimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.mmm_talk .con{
+    margin-left: 50px;
+}
+.mmm_talk .name {
+    height: 24px;
+}
+.mmm_talk .username{
+    float: left;
+    color:#5799CC;
+}
+.mmm_talk .time{
+    float: right;
+}

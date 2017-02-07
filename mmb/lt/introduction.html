@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品詳細信息</title>
+    <!-- 设置视口标签  让布局视口的大小等于手机设备的大小-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/introduction.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/template-native.js"></script>
+</head>
+<body>
+    <!-- 公共的头部开始 -->
+    <div class="header_warp">
+        <div class="fl header_loge">
+            <img src="imags/icon/header_logo.png">
+        </div>
+        <div class="fr header_download">
+            <img src="imags/icon/header_app.png" alt="">
+        </div>
+    </div>
+    <!--公共的搜索框区域-->
+    <div class="search_header">
+        <div class="search_frame clearfix">
+            <input type="text" placeholder="请输入你想比价的商品" class="fl search_txt my__center_y">
+            <div class="yuan_search_btn fr">
+                <input type="button" value="搜索" class="search_btn my__center">
+            </div>
+        </div>
+    </div>
+    <!--三级导航开始-->
+    <div class="three_nav">
+        <a href="../Home/home.html">首页</a> > <a href="javascript:void (0);"></a> > <a href="javascript:void (0);"></a> >
+    </div>
+    <!--商品的展示部分開始-->
+    <div class="exhibition" id="exhibition">
+        <p class="txt_cut exeTitile" id="exeTitile"></p>
+    </div>
+    <!--商品的比较部分开始-->
+    <div class="contrast clearfix">
+        <ul class="contrast_ul clearfix">
+            <li class="fl contrast_ul_li1">比价购买</li>
+            <li class="fl contrast_ul_li2">产品参数</li>
+            <li class="fl">评价</li>
+        </ul>
+    </div>
+    <!--商品的比较部分中的内容开始-->
+    <div class="contrast_content clearfix" id="contrast_content">
+
+    </div>
+    <!--价格的提示-->
+    <div class="prompt">*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟</div>
+    <!--网友的评价-->
+    <div class="comment">
+        <div class="comment_title">网友评价</div>
+        <div class="comment_content">
+            <ul class="comment_content_ul" id="comment_content_ul">
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部部分 -->
+    <footer>
+        <div class="footer_t">
+            <a href="javascript:;" class="login">登录</a>
+            <a href="javascript:;" class="register">注册</a>
+            <a href="#" class="return_top">
+                <img src="images/top.jpg" alt="">
+                返回顶部
+            </a>
+        </div>
+        <div class="footer_b">
+            <p>
+                <a class="app_download" href="javascript:;">手机APP下载</a>
+                <a class="mmb_mobile" href="javascript:;">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p>
+                m.manmanbuy.com  
+            </p>
+        </div>
+    </footer>
+
+<!--商品的评论的模板    -->
+<script type="text/template" id="pro_items">
+    <% for(var i=0; i< item.length; i++){ %>
+        <li>
+            <div class="clearfix">
+                <span class="use fl"><%= item[i].comName %></span>
+                <span class="date fr"><%= item[i].comTime %></span>
+            </div>
+            <div class="clearfix">
+                <p class="source fr"><%= item[i].comFrom %></p>
+            </div>
+            <p class="text">
+                <%= item[i].comContent %>
+            </p>
+        </li>
+    <% } %>
+</script>
+<script>
+
+    function query(url) {
+       var obj = {};
+       var str=url.split('?')[1];
+       var arr=str.split('=');
+       obj[arr[0]]=arr[1]?arr[1]:"";
+       return obj;
+    }
+    var productId = query(location.href)['productId'];
+    //评论的数据
+    $.ajax({
+        type:'get',
+        // url:'http://mmb.ittun.com/api/getproductcom?productid=0',
+        url:'http://192.168.50.130:8002/api/getproductcom?productid='+productId,
+        success:function(data){
+            // console.log(data);
+            var str=template('pro_items',{item:data.result});
+            $('#comment_content_ul').append(str);
+        }
+    });
+//    商品的详情页面开始
+    $.ajax({
+        type:'get',
+        // url:'http://mmb.ittun.com/api/getproduct?productid=10',
+        url:'http://192.168.50.130:8002/api/getproduct?productid='+productId,
+        dataType:'json',
+        success:function(data1){
+            // console.log(data1);
+            $('#exeTitile').text(data1.result[0].productName);
+            $('#exhibition').append(data1.result[0].productImg);
+            $('#contrast_content').append(data1.result[0].bjShop);
+            $('.three_nav a').eq(2).html(data1.result[0].productName.split(' ')[0]);
+            var categoryid = data1.result[0].categoryId;
+            //发起ajax请求，获得当前页面的category名称
+            $.ajax({
+                type: "get",
+                // url: "http://mmb.ittun.com/api/getcategorybyid?categoryid" + categoryid,
+                url: "http://192.168.50.130:8002/api/getcategorybyid?categoryid=" + categoryid,
+                dataType:'json',
+                success:function(data){
+                    // console.log(data);
+                    var category = data.result[0]["category"];
+                    $(".three_nav a").eq(1).html(category).attr('href','details.html?categoryId='+categoryid);
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

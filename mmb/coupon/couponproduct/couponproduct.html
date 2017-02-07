@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="css/quandetails.css">
+</head>
+<body>
+	<!-- header部分 -->
+	<header>
+		<a class="header_icon" href="../coupon.html">
+			<img src="../images/back.png" alt="">
+		</a>
+		<a class="app_download" href="javascript:;"></a>
+		<p class="ac couponTitle">肯德基优惠券</p>
+	</header>
+
+	<!-- 主体部分 -->
+	<div class="main">
+		<p class="tip ac">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+		<ul class="quanLists">
+			<!-- <li>
+				<a class="quanItem db" href="javascript:;">
+					<div class="fl img_box">
+						<img src="images/kfc-5ikfc-111_p5.jpg" alt="">
+					</div>
+					<div class="details">
+						<p class="description">C3 允指原味鸡1块 2016年11月凭肯德基优惠券</p>
+						<p class="price">&yen; 7.5</p>
+						<p class="date">有效期至11月30日</p>
+					</div>
+				</a>
+			</li> -->
+		</ul>
+	</div>
+
+	<!-- title部分 -->
+	<div class="title">
+		<a href="../../Home/home.html">首页></a>
+		<a href="../coupon.html">优惠券></a>
+		<a href="javascript:;" class="couponTitle">肯德基优惠券</a>
+	</div>
+
+	<!-- 底部部分 -->
+	<footer>
+		<div class="footer_t">
+			<a href="javascript:;" class="login">登录</a>
+			<a href="javascript:;" class="register">注册</a>
+			<a href="#" class="return_top">
+				<img src="../images/top.jpg" alt="">
+				返回顶部
+			</a>
+		</div>
+		<div class="footer_b">
+			<p>
+				<a class="app_download" href="javascript:;">手机APP下载</a>
+				<a class="mmb_mobile" href="javascript:;">慢慢买手机版</a>
+				-- 掌上比价平台
+			</p>
+			<p>
+                m.manmanbuy.com  
+			</p>
+		</div>
+	</footer>
+
+	<!-- mask部分 -->
+	<div id="mask">
+		<div class="sliderScreen">
+			<ul class="sliderWrap">
+				<!-- <li class="transitionAll"><img src="" alt="aaa"></li> -->
+			</ul>
+		</div>
+		<div class="arrs">
+			<span class="arr-l fl"><</span>
+			<span class="arr-r fr">></span>
+		</div>
+	</div>
+</body>
+<script type="text/template" id="tpl">
+	<% for(var i=0;i<result.length;i++){ %>
+	<li>
+		<a class="quanItem db" href="javascript:;">
+			<div class="fl img_box">
+				<%=# result[i].couponProductImg %>
+			</div>
+			<div class="details">
+				<p class="description"><%= result[i].couponProductName %></p>
+				<p class="price"><%= result[i].couponProductPrice %></p>
+				<p class="date"><%= result[i].couponProductTime %></p>
+			</div>
+		</a>
+	</li>
+	<% } %>
+</script>
+<script type="text/template" id="tpl1">
+	<% for(var i=0;i<result.length;i++){ %>
+	<li>
+		<%=# result[i].couponProductImg %>
+	</li>
+	<% } %>
+</script>
+<script src="../js/template-native.js"></script>
+<script src="../js/zepto.js"></script>
+<script src="../js/event.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/touch.js"></script>
+<script src="js/couponproduct.js"></script>
+</html>

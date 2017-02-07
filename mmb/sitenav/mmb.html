@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mmb.css">
+    <title>Title</title>
+</head>
+<body>
+<!--头部区域-->
+<header class='mmb_top'>
+    <div class="right fr mmb_app">
+        <a href="#" class='my__center'>
+            <img src="images/icons/header_app.png" alt="">
+        </a>
+    </div>
+    <div class="left mmb_logo">
+        <a href="../Home/home.html" class='my__center_y'>
+            <img src="images/icons/header_logo.png" alt="">
+        </a>
+    </div>
+</header>
+<!--search区域-->
+<section class='mmb_search'>
+    <div class="mmb_search_txt">
+        <input type="search" name="search" id="search" placeholder='请输入你想比价的商品' class='s_input'>
+    </div>
+    <div class="mmb_search_btn">
+        <input type="submit" value="搜索" class='s_btn'>
+    </div>
+</section>
+<!--nav区域-->
+<section class='mmb_nav'>
+    <a href="../Home/home.html">首页</a>
+    >
+    <a href="sitenav.html">品牌大全</a>
+    >
+    平板电视哪个牌子好
+</section>
+<!--十大品牌开始-->
+<section class='mmb_product'>
+    <div class="mmb_product_h">平板电视哪个牌子好</div>
+    <div class="mmb_product_b">
+        <div class="loading"></div>
+        <ul class='mmb_product_list'>
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<span class='tip fl'>1</span>-->
+                    <!--<div class="product_info fl">-->
+                        <!--<h3>三星平板电视</h3>-->
+                        <!--<p>30天全网销售：239596件</p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</section>
+<!--尾部区域-->
+<section class='footer'>
+    <div class="footer_return">
+        <button class="login fl">
+            <a href="#">登录</a>
+        </button>
+        <button class="register fl">
+            <a href="#">注册</a>
+        </button>
+        <button class="back fr ">
+            <a href="#">返回顶部</a>
+        </button>
+    </div>
+    <div class="phoneload">
+        <p><span style='color: #FF0000'>手机APP下载</span>慢慢买手机版--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+<script src='js/zepto.js'></script>
+<script src="js/ajax.js"></script>
+<script src="js/event.js"></script>
+<script src='js/template-native.js'></script>
+<script type='text/html' id='tpl'>
+    <% for(var i = 0; i < items.length; i++) { %>
+        <li>
+            <a href="product.html?brandTitleId=<%= items[i].brandTitleId %>">
+                <span class='tip fl'><%= items[i].brandId +1 %></span>
+                <div class="product_info fl">
+                    <h3><%= items[i].brandName %></h3>
+                    <p><%= items[i].brandInfo %></p>
+                </div>
+            </a>
+        </li>
+    <% } %>
+</script>
+<script src='js/mmb.js'></script>
+</body>
+</html>

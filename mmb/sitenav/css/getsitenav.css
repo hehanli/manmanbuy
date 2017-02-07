@@ -1,0 +1,64 @@
+/*头部部分*/
+.mmb_top .left{
+    width: 30px;
+    height: 50px;
+    position: relative;
+    /*background-color: pink;*/
+}
+.mmb_top .left:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 17px;
+    left:20px;
+}
+.mmb_top .right{
+    width: 48px;
+    height: 50px;
+    /*background-color: red;*/
+}
+.mmb_top .center{
+    margin: 0 48px 0 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 700;
+    /*background-color: green;*/
+}
+/*主体部分*/
+/*.mmb_title{*/
+    /*margin: 20px;*/
+/*}*/
+.mmb_title ul{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.mmb_title ul li {
+    display: inline-block;
+}
+.mmb_title ul li a{
+    display: inline-block;
+    padding:5px 4px 5px 4px ;
+    border: 1px solid #cccccc;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    color: #000;
+    margin: 5px ;
+    vertical-align: middle;
+}
+.mmb_title ul li a img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}

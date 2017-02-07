@@ -1,0 +1,225 @@
+/*header部分*/
+header{
+	height: 50px;
+	background-color:#ff841d;
+	position: relative;
+}
+
+header .header_logo{
+	position: absolute;
+	left: 17px;
+	top: 12px;
+	height: 25px;
+	width:186px;
+	background-image: url(../images/header_logo.png);
+	background-size: cover;
+	text-indent: -10000px;
+}
+
+header .app_download{
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 34px;
+	height: 34px;
+	background-image: url(../images/header_app.png);
+	background-size: cover;
+}
+
+/*搜索框*/
+.search_box{
+	height: 30px;
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
+	font-size:0;
+	padding: 10px;
+	position: relative;
+	background-color: #fff;
+}
+
+.search_box input{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	border-radius: 15px;
+	outline: none;
+}
+.search_box .search{
+	width: 90%;
+	padding-left: 5%;
+	background-color: #f1f1f1;
+}
+.search_box .btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 63px;
+	color: #fff;
+	background-color: #ff841d;
+}
+
+/*导航部分*/
+.nav{
+	padding: 12px 0;
+	background-color: #fff;
+	border-bottom: 4px solid #f7f7f7;
+}
+.nav a{
+	padding: 9px 0;
+}
+.nav a img{
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.nav a p{
+	font-size: 13px;
+	color:#5a5a5a;
+}
+
+
+/*超值折扣推荐*/
+.discount .discount_header{
+	height: 35px;
+	background-color: #ff9f22;
+	border-bottom: 1px solid #ffc881;
+	padding: 0 10px;
+}
+
+.discount .discount_header span{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 35px;
+	color:#fff;
+}
+.discount .discount_header img{
+	width: 20px;
+	height: 20px;
+	margin-top: 8px;
+}
+.discount .discount_lists{
+	background-color: #fff;
+}
+.discount .discount_lists .product_item{
+	border-bottom: 1px solid #e0e0e0;
+	padding: 14px 8px;
+	height: 100px;
+}
+.discount .discount_lists .product_img{
+	width: 100px;
+	height: 100px;
+}
+.discount .discount_lists .product_item .details{
+	margin-left: 110px;
+	height: 100px;
+}
+.discount .details .detail_title{
+	font-size: 15px;
+	color:#333333;
+	min-height: 57px;
+}
+.discount .details .detail_title span{
+	color:#ff6c00;
+}
+
+.discount .details .detail_info{
+	margin-top: 12px;
+	color: #a1a1a1;
+}
+.discount .details .detail_info .comment{
+	position: relative;
+}
+.discount .details .detail_info .comment::before{
+	content: "";
+	position: absolute;
+	width: 13px;
+	height: 11px;
+	background-image: url(../images/comment.png);
+	left: -18px;
+	top: 4px;
+}
+
+.discount .moreItem{
+	padding: 10px 8px 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.discount .moreItem a{
+	height: 30px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	color: #000000;
+	font-size: 13px;
+}
+
+/*品牌导航*/
+.pinpai .pinpai_header{
+	height: 35px;
+	background-color: #ff9f22;
+	border-bottom: 1px solid #ffc881;
+	padding: 0 10px;
+}
+
+.pinpai .pinpai_header span{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 35px;
+	color:#fff;
+}
+.pinpai .pinpai_header img{
+	width: 20px;
+	height: 20px;
+	margin-top: 8px;
+}
+
+/*底部部分*/
+footer{
+	margin-top: 10px;
+	background-color: #efefef;
+}
+footer .footer_t{
+	font-size: 0;
+}
+footer .footer_t a{
+	display: inline-block;
+	font-size: 14px;
+	color: #000000;
+	text-align: center;
+	line-height: 34px;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+}
+footer .footer_t .login{
+	width: 30%;
+}
+footer .footer_t .register{
+	width: 30%;
+	box-sizing: border-box;
+	border: 1px solid #c4c4c4;
+}
+footer .footer_t .return_top{
+	width: 40%;
+}
+footer .footer_t .return_top img{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-bottom: -1px;
+	margin-right: -3px;
+}
+
+footer .footer_b{
+	padding: 15px 0;
+	text-align: center;
+}
+footer .footer_b p{
+	height: 14px;
+	line-height: 14px;
+}
+footer .footer_b .app_downlod{
+	color:#fd0000;
+}
+footer .footer_b .mmb_mobile{
+	color:#000000;
+}

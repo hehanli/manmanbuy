@@ -1,0 +1,86 @@
+/*主体部分*/
+.main{
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+.main .tip{
+	height: 33px;
+	line-height: 33px;
+}
+
+.main .quanItem{
+	padding: 10px;
+	border-bottom: 1px solid #e7e7e7; 
+}
+.main .quanItem img{
+	width: 100px;
+	height: 80px;
+}
+.main .quanItem .details{
+	margin-left: 110px;
+	min-height: 98px;
+	color: #000;
+}
+.main .quanItem .details .description{
+	font-size: 14px;
+	line-height: 20px;
+}
+.main .quanItem .details .price{
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+}
+.main .quanItem .details .date{
+	margin-top: 16px;
+	color: #ee7700;
+}
+
+/*模态框部分*/
+#mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	background-color:rgba(0,0,0,.5);
+	display: none;
+}
+#mask .sliderScreen{
+	position: absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 120px;
+	height: 100px;
+	background-color: #fff;
+	overflow: hidden;
+}
+#mask .sliderWrap{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+#mask .sliderWrap li{
+	width: 120px;
+	height: 100px;
+	float: left;
+}
+
+#mask .arrs{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+#mask .arr-l,#mask .arr-r{
+	height: 80px;
+	width: 80px;
+	font-size: 60px;
+	font-weight:900;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+}
